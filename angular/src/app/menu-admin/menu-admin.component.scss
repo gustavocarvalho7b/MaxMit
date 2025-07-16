@@ -2,25 +2,27 @@
 
 .menu-container{
     margin-left: 30px;
+    margin-top: 10px;
     font-family: 'Michroma', sans-serif;
     font-size: 30px;
-    width: 300px;
+    width: max-content;
     font-weight: 800;
 
     .lista {
-        border: 3px solid black;
-        border-radius: 10%;       
+        border: 3px solid rgba(0, 0, 0, 0.7);
+        border-radius: 50px; 
         
     }
 
-    .lista li, span {
+    .opcoes {
         margin-bottom: 10px;
         cursor: pointer;
         margin: 20px;
         margin-left: 10px;
+        justify-items: baseline;
     }
 
-    .lista li:hover {
+    .opcoes:hover {
         background-color: rgba(0, 0, 0, 0.4);
         color: black;
         border-radius: 10px;
