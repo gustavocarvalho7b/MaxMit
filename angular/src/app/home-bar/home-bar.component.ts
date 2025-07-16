@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class HomeBarComponent {
   menuMax: boolean = false;
   menuAdmin() {
-    this.menuMax = true;
+    this.menuMax = !this.menuMax;
   }
 }

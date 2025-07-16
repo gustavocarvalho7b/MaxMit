@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.menu-container{
+    margin-left: 30px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    width: 300px;
+    font-weight: 800;
+
+    .lista {
+        border: 3px solid black;
+        border-radius: 10%;       
+        
+    }
+
+    .lista li, span {
+        margin-bottom: 10px;
+        cursor: pointer;
+        margin: 20px;
+        margin-left: 10px;
+    }
+
+    .lista li:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: black;
+        border-radius: 10px;
+        font-size: 35px;
+        width: auto;
+        transform: scale(1.02);
+}
+
+}
