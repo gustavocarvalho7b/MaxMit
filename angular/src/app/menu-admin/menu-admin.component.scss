@@ -9,17 +9,27 @@
     font-weight: 800;
     z-index: 1000;
     position: fixed;
+    transform: translateX(-100px);
+    animation: aparecer 0.4s ease-out forwards;
+    opacity: 0;
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
     .lista {
-        background-image: url('../../assets/cimento.jpg');
-        background-size: cover;
-        background-position:inherit;
-        background-repeat: no-repeat;
-        backdrop-filter: blur(6px);
+        //  background-image: url('../../assets/cimento.jpg');
+        // background-size: cover;
+        // background-position:inherit;
+        // background-repeat: no-repeat;
+        background-color:rgb(255, 255, 255, 0.4) ;
         border: 3px solid rgba(0, 0, 0, 0.8);
         border-radius: 50px; 
-
         
     }
 
@@ -29,15 +39,32 @@
         margin: 20px;
         margin-left: 10px;
         justify-items: baseline;
+        transition: color 0.3s;
+        position: relative;
+    }
+    .opcoes::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 4px;
+        background-color: rgb(154, 122, 82, 0.9);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease;
     }
 
     .opcoes:hover {
-        background-color: rgba(0, 0, 0, 0.4);
+
         color: black;
         border-radius: 10px;
-        font-size: 35px;
         width: auto;
+        font-size: 30px;
         transform: scale(1.02);
-}
+    }
+    .opcoes:hover::after {
+        transform: scaleX(1);
+        }
 
 }

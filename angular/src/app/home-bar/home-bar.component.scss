@@ -18,7 +18,12 @@
             object-fit: contain;
             max-width: 100%;
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
+
+        .girar .logo {
+            transform: rotateY(180deg);
+            }
     }
 }
 

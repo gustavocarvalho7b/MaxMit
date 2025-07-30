@@ -6,8 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './home-bar.component.scss',
 })
 export class HomeBarComponent {
+  girando = false;
   menuMax: boolean = false;
+
   menuAdmin() {
     this.menuMax = !this.menuMax;
+  }
+
+    girarImagem() {
+    this.girando = true;
+    setTimeout(() => {
+      this.girando = false;
+    }, 200);
   }
 }
