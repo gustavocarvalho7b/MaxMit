@@ -1,1 +1,122 @@
-<p>cardall works!</p>
+<div class="container" appHorizontalScroll>
+  <div class="cards-track">
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 1</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 2</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+    <div class="neon">
+      <span class="screw top-left"></span>
+      <span class="screw top-right"></span>
+      <span class="screw bottom-left"></span>
+      <span class="screw bottom-right"></span>
+      <h3>Aluno 3</h3>
+      <p>Descrição</p>
+    </div>
+
+    <!-- adicione quantos precisar -->
+  </div>
+</div>
+<script>
+  // Garante que o DOM esteja pronto
+  (function attachHorizontalScroll() {
+    var containers = document.querySelectorAll(".container");
+    containers.forEach(function (el) {
+      // Converte a rolagem vertical em horizontal
+      el.addEventListener(
+        "wheel",
+        function (e) {
+          // deltaY (rodinha) ou deltaX (trackpad)
+          var delta = e.deltaY !== 0 ? e.deltaY : e.deltaX;
+          el.scrollLeft += delta;
+          e.preventDefault();
+          e.stopPropagation();
+        },
+        { passive: false }
+      );
+    });
+  })();
+</script>
