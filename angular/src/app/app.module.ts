@@ -11,6 +11,7 @@ import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
 import { CardallComponent } from './cardall/cardall.component';
+import { HorizontalScrollDirective } from './cardall/horizontal-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CardallComponent } from './cardall/cardall.component';
     HomeComponent,
     ModalComponent,
     CardallComponent,
+    HorizontalScrollDirective,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],

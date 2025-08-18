@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  telefone: 1
+  email: MyString
+  cpf: MyString
+  foto: 
+  data_nascimento: 2025-08-18
+  ultimo_pagamento: 2025-08-18
+  ultima_avaliacao_id: 1
+  valor: MyString
+  ativo: false
+  turma_id: one
+  data_inicio: 2025-08-18
+  modalidade_id: 1
+  turma_id: one
+
+two:
+  nome: MyString
+  telefone: 1
+  email: MyString
+  cpf: MyString
+  foto: 
+  data_nascimento: 2025-08-18
+  ultimo_pagamento: 2025-08-18
+  ultima_avaliacao_id: 1
+  valor: MyString
+  ativo: false
+  turma_id: two
+  data_inicio: 2025-08-18
+  modalidade_id: 1
+  turma_id: two
