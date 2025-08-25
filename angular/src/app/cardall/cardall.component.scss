@@ -95,7 +95,9 @@
   color: #bbb;
   border-radius: 10px;
   border: 1px solid #bbb;
-
+}
+.pesquisar::placeholder {
+  color: #bbb;
 }
 
 .filtro {
@@ -116,6 +118,7 @@
   cursor: pointer;
   border-radius: 12px;
   border: 1px solid #bbb;
+  height: 35px;
 }
 
 .dropdown {
