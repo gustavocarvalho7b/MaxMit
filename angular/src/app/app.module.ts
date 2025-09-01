@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
 import { CardallComponent } from './cardall/cardall.component';
 import { HorizontalScrollDirective } from './cardall/horizontal-scroll.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HorizontalScrollDirective } from './cardall/horizontal-scroll.directive
     CardallComponent,
     HorizontalScrollDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })

@@ -1,103 +1,32 @@
+<div class="filtros">
+  <select id="filtroTipo" class="filtroTipo">
+    <option value="">Turma</option>
+    <option>Turma 1</option>
+    <option>Turma 2</option>
+    <option>Turma 3</option>
+  </select>
+  <input
+    id="pesquisa"
+    type="text"
+    class="filtroPesq"
+    placeholder="Digite sua busca..."
+  />
+</div>
 <div class="container" appHorizontalScroll [speed]="4">
-  <div class="cards-track">
-    <div class="neon">
+  <div class="trilha">
+    <div class="aluno" *ngFor="let aluno of alunos">
       <span class="screw top-left"></span>
       <span class="screw top-right"></span>
       <span class="screw bottom-left"></span>
       <span class="screw bottom-right"></span>
       <img src="../../assets/image.jpg" alt="Foto-perfil" class="foto" />
-      <h3>Gustavo Carvalho</h3>
-      <p>28 Anos</p>
+      <h3>{{ aluno.nome }}</h3>
+      <p *ngIf="aluno.data_nascimento">
+        {{ calcularIdade(aluno.data_nascimento) }} anos
+      </p>
+      <p *ngIf="!aluno.data_nascimento">Data de nascimento não preenchida</p>
       <p>Turma: 17:50</p>
       <p>Emagrecimento</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 2</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
-    </div>
-    <div class="neon">
-      <span class="screw top-left"></span>
-      <span class="screw top-right"></span>
-      <span class="screw bottom-left"></span>
-      <span class="screw bottom-right"></span>
-      <h3>Aluno 3</h3>
-      <p>Descrição</p>
     </div>
   </div>
 </div>
