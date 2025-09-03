@@ -1,3 +1,12 @@
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins "*" # ou coloque o endereço do seu frontend, ex: 'http://localhost:4200'
+    resource "*",
+      headers: :any,
+      methods: [ :get, :post, :put, :patch, :delete, :options, :head ]
+  end
+end
+
 # Be sure to restart your server when you modify this file.
 
 # Avoid CORS issues when API is called from the frontend app.

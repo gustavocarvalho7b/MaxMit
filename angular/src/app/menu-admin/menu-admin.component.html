@@ -1,11 +1,13 @@
 <div *ngIf="visivel" class="menu-container">
   <div class="lista">
-    <span class="opcoes">Alunos</span>
-    <span class="opcoes">Exercícios</span>
-    <span class="opcoes">Treinos</span>
-    <span class="opcoes">Grupos músculares</span>
-    <span class="opcoes">Modalidades</span>
-    <span class="opcoes">Periodização</span>
-    <span class="opcoes">Turmas</span>
+    <span class="opcoes" routerLink="/alunos" (click)="fecharMenu()"
+      >Alunos</span
+    >
+    <span class="opcoes" (click)="fecharMenu()">Exercícios</span>
+    <span class="opcoes" (click)="fecharMenu()">Treinos</span>
+    <span class="opcoes" (click)="fecharMenu()">Grupos músculares</span>
+    <span class="opcoes" (click)="fecharMenu()">Modalidades</span>
+    <span class="opcoes" (click)="fecharMenu()">Periodização</span>
+    <span class="opcoes" (click)="fecharMenu()">Turmas</span>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home-bar',
@@ -10,10 +10,15 @@ export class HomeBarComponent {
   menuMax: boolean = false;
 
   menuAdmin() {
-    this.menuMax = !this.menuMax;
+    console.log('Abrindo menu');
+    this.menuMax = true;
   }
 
-    girarImagem() {
+  fecharMenu() {
+    this.menuMax = false;
+  }
+
+  girarImagem() {
     this.girando = true;
     setTimeout(() => {
       this.girando = false;
