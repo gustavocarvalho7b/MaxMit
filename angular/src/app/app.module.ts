@@ -9,10 +9,10 @@ import { AppComponent } from './app.component';
 import { HomeBarComponent } from './home-bar/home-bar.component';
 import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 import { HomeComponent } from './home/home.component';
-import { ModalComponent } from './modal/modal.component';
 import { CardallComponent } from './cardall/cardall.component';
 import { HorizontalScrollDirective } from './cardall/horizontal-scroll.directive';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalCadastroComponent } from './modal-cadastro/modal-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeBarComponent,
     MenuAdminComponent,
     HomeComponent,
-    ModalComponent,
     CardallComponent,
     HorizontalScrollDirective,
+    ModalCadastroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [provideClientHydration()],
