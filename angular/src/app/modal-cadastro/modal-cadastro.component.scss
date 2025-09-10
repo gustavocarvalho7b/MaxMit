@@ -1,11 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
 .container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
     margin-top: 20px;
-    overflow-x: auto;
-    padding: 20px 0;
+    padding: 12px 0;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
@@ -38,13 +34,90 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .titulo {
+    font-family: 'Montserrat', sans-serif;
     border: solid 1px #666;
     border-radius: 9px;
     height: 75px;
     width: 560px;
     margin-left: 100px;
-    background: linear-gradient(145deg, #2b2b2b, #1c1c1c);
+    align-items: center;
+    display: flex;
+    align-content: center;
+  background-color: #1e1e1e;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 20px,
+      rgba(0, 0, 0, 0.15) 20px,
+      rgba(0, 0, 0, 0.15) 40px
+    );
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  color: #00f5d4;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 12px;
+
+
+  box-shadow: 
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.6),
+    4px 4px 10px rgba(0, 0, 0, 0.7);
+
+  border: 1px solid #111; /* borda escura */;
+}
+
+.botao
+Button {
+    background: linear-gradient(145deg, #1c1c1c, #2a2a2a); /* preto/cinza sutil */
+    color: #00f5d4; /* texto verde-água */
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 12px;
+
+    /* sombras para dar profundidade */
+    box-shadow: 
+        inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* brilho leve interno */
+        inset -1px -1px 3px rgba(0, 0, 0, 0.6),     /* sombra interna */
+        4px 4px 10px rgba(0, 0, 0, 0.7);            /* sombra externa */
+
+    border: 1px solid #111; /* borda escura */;
+}
+
+.trilha {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.card {
+  background: linear-gradient(145deg, #2b2b2b, #1c1c1c);
+  border: 2px solid #888;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.05),
+              0 4px 12px rgba(0,0,0,0.5);
+  color: #00ffcc;
+  position: relative;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  display: inline-block;
 
 }
+
+.screw {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #bbb 40%, #777 70%);
+  border-radius: 50%;
+  box-shadow: inset 0 0 3px #000;
+}
+
+.top-left { top: 8px; left: 8px; }
+.top-right { top: 8px; right: 8px; }
+.bottom-left { bottom: 8px; left: 8px; }
+.bottom-right { bottom: 8px; right: 8px; }
