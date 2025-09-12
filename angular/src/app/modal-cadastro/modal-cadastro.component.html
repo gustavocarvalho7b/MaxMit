@@ -4,14 +4,25 @@
 </div>
 <div class="container">
   <div class="trilha">
-    <div class="card">
+    <div class="card" *ngFor="let cadastro of cadastros">
       <span class="screw top-left"></span>
       <span class="screw top-right"></span>
       <span class="screw bottom-left"></span>
       <span class="screw bottom-right"></span>
-      <h3>Teste</h3>
-      <p>Turma: 17:50</p>
-      <p>Emagrecimento</p>
+      <div class="bloco">
+        <div class="esquerda">
+          <h1>{{ cadastro.titulo }}</h1>
+          <p>Turma: 17:50</p>
+          <p>Emagrecimento</p>
+        </div>
+        <div class="meio"></div>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="direita">
+        <button>ver mais</button>
+        <p></p>
+      </div>
     </div>
   </div>
 </div>

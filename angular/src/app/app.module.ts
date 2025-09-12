@@ -13,6 +13,7 @@ import { CardallComponent } from './cardall/cardall.component';
 import { HorizontalScrollDirective } from './cardall/horizontal-scroll.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalCadastroComponent } from './modal-cadastro/modal-cadastro.component';
+import { ExerciciosComponent } from './exercicio/exercicio.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ModalCadastroComponent } from './modal-cadastro/modal-cadastro.componen
     CardallComponent,
     HorizontalScrollDirective,
     ModalCadastroComponent,
+    ExerciciosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [provideClientHydration()],
